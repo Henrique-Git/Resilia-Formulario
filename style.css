@@ -1,0 +1,25 @@
+/*Definição das configurações da página*/
+.atvd {
+    background: linear-gradient(rgb(241, 241, 241), #b4b4b4) ;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+    "cabeçalho"
+    "conteudo"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 100px calc(100% - 380px) 280px;
+    max-height: 100%;
+}
+
+.top{
+    grid-area: cabeçalho;
+}
+
+.content{
+    grid-area: conteudo;
+}
+
+.bottom{
+    grid-area: rodape;
+}
